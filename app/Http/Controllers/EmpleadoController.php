@@ -21,7 +21,7 @@ class EmpleadoController extends Controller
             'identificacion' => 'required|string|max:20|unique:empleados,identificacion',
             'correo' => 'required|email|max:300|unique:empleados,correo',
             'fechaIngreso' => 'required|date',
-            'area' => 'required|string',
+            'area' => 'required|in:Administración, Financiera, Compras, Infraestructura, Operación, Talento Humano, Servicios Varios',
             'estado' => 'required|string',
             'fechaHoraRegistro' => 'required|string',
         ]);
